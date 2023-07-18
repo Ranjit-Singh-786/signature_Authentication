@@ -1,5 +1,5 @@
 #  Handwritten Signature Matching 
-Description:
+Description:<br>
 Handwritten Signature Matching is a computer vision project that aims to automate the process of verifying signatures by analyzing their similarity. Leveraging the power of deep learning and cosine similarity concepts, this project utilizes the ResNet50 convolutional neural network (CNN) architecture to extract meaningful features from handwritten signatures.
 
 The project workflow begins with a dataset of handwritten signatures, which are preprocessed to enhance their quality and reduce noise. The signatures are then fed into the ResNet50 CNN, a powerful deep learning model that has been pretrained on a large-scale image classification task. By leveraging transfer learning, the model is capable of extracting high-level features and representations from the input signatures.
