@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+</head>
+<body>
+    <div id="cls">
+    <h2>Signature Authentication App</h2>
+    <form action="{{ url_for('predict') }}" method='post' id="formm" enctype="multipart/form-data">
+        <select name="user" id="fifth" required="required">
+            <option value="0" >Anuj kumar</option>
+            <option value="1">Ranjit singh</option>
+            <option value="2">Syam singh</option>
+            </select>
+            <input type="file" name="file" id="fifth" accept=".png, .jpg, .jpeg"><br>
+            <input type="submit" id="btn">
+    </form>
+    <h1>percentage of signature matched {{ percentage }}%</h1>
+<h2 style="text-align: center;">copyright@smartengineer0786@gmail.com</h2>
+
+</div>
+<style>
+/* * {
+    margin:0px;
+    padding:0px;
+} */
+body{
+    font-family: sans-serif;
+    
+} 
+#cls {
+                    color:rgb(80, 78, 77);
+                align-items: center;
+                    background-color: rgb(202, 173, 231);
+                }
+                #fifth {
+                            /* text-decoration:none; */
+                            box-shadow: 2px 8px 5px rgb(95, 93, 93);
+                            background-color: whitesmoke;
+                            border-radius: 14px;
+                            height: 25px;
+                            font-size: 15px;
+                            width: 250px;
+                            text-align: center;
+                        }
+                #btn{
+                            border: 3px solid black;
+                            border-radius: 50px;
+                            background-color:rgb(105, 104, 102);
+                            width: 210px;
+                            height: 35px;
+                            font-size: 15px;
+                            color: whitesmoke;
+                            box-shadow: 2px 8px 5px rgb(95, 93, 93);
+                
+                        }
+</style>
+</body>
+</html>
